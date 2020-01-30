@@ -1,0 +1,4 @@
+/node_modules/*
+/allure-results/*
+.DS_Store
+package-lock.json

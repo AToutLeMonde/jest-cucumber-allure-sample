@@ -1,0 +1,46 @@
+{
+  "name": "js-testing-sample",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0",
+    "styled-components": "^4.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "unit-tests": "CI=true react-scripts test --tagFilter=@unit --testPathIgnorePatterns=src/__tests__/support/ --setupFilesAfterEnv=jest-allure/dist/setup --setupFiles=./src/jest-cucumber-config",
+    "cucumber": "cucumber-js ./src/__tests__/features -r ./src/__tests__/steps",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "<rootDir>/src/__tests__/steps/shared/"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.13.0",
+    "cucumber": "^6.0.2",
+    "jest-allure": "^0.1.1",
+    "jest-allure-reporter": "^1.2.3",
+    "jest-cucumber": "^2.0.11"
+  }
+}

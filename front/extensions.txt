@@ -1,0 +1,3 @@
+Gherkin Table Formatter
+Snippets and Syntax Highlight for Gherkin (Cucumber)
+Gherkin step autocomplete
